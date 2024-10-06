@@ -1,0 +1,2 @@
+conteudo/* filter=lfs diff=lfs merge=lfs -text
+conteudo/*.mp4 filter=lfs diff=lfs merge=lfs -text

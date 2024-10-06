@@ -1,0 +1,394 @@
+html {
+    scroll-behavior:unset;
+}
+
+body{
+    animation: aparecerPorBaixo 2s ease 0s 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    height: 100vh ;
+    background-color: #191a23;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Long Beach", sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Long Beach';
+    src: url('fonts/Long Beach - (Demo) hanscostudio.com.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes balancar {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+
+@keyframes aparecerPorBaixo {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.scroll-effect {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.scroll-effect.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-effect2 {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.scroll-effect2.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-effect3 {
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.scroll-effect3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-effect4 {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.scroll-effect4.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-effect5 {
+    opacity: 0;
+    transform: translateX(-600px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.scroll-effect5.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Inicio {
+    width: 100%;
+    height: 800px;
+}
+
+
+.Inicio > .bg-video {
+    position: fixed;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+
+.Inicio> .bg-video > video{
+    width: 100%;
+}
+
+
+
+.Inicio .container {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .6s;
+}
+
+.Inicio .container h1{
+    margin-left: 50px ;
+    font-size: 60px;
+}
+
+.Inicio .container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}  
+
+.Inicio .container i{
+
+    font-size: 30px;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    transition: .6s;
+    
+}  
+
+.Inicio .container i:hover{
+    transform: scale(1.2);
+    
+    
+}  
+
+.Habilidades {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.Habilidades .container {
+    display: flex;
+}
+
+.Habilidades h1 {
+    margin-bottom: 50px;
+}
+
+
+.Habilidades .container .Linguagens {
+    
+    text-align: center;
+    border: 2px  solid white;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    background-color: #191a2380;
+    padding: 20px;
+    margin-left: 30px ;
+    transition: 1s;
+}
+
+.Habilidades .container .Linguagens:hover{
+    transform: scale(1.1);
+}
+
+.Habilidades .container .Linguagens p{
+    font-family: "Lexend", sans-serif;
+    margin-top: 40px;
+    font-size: 15px;
+    text-align: start;
+
+}
+
+.Habilidades .container .Linguagens ul li {
+    font-family: "Lexend", sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: start;
+}
+
+.Habilidades .container .Linguagens img {
+    height: 40px;
+    filter: invert(1);
+}
+
+.meuprojetos {
+    margin-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.meuprojetos h1{
+    margin-bottom: 150px;
+}
+
+.meuprojetos .container .projetos {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.meuprojetos .container .projetos img{
+    height: 260px;
+    margin: 0 100px;
+}
+
+.meuprojetos .container .projetos img:hover{
+    transform: scale(1.08);
+}
+
+.meuprojetos .container .projetos .Item1, .Item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+}
+
+.meuprojetos .container .projetos .Item1 span, .Item2 span {
+    display: flex;
+    
+}
+
+.meuprojetos .container .projetos .Item1 .imgIcons{
+    height: 40px;
+    margin: 10px 0;
+}
+
+.meuprojetos .container .projetos .Item2 .imgIcons{
+    height: 40px;
+    margin: 10px 0;
+}
+
+
+.meuprojetos .container .projetos .Item1 h1, .Item2 h1 {
+    
+    width: 200px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.meuprojetos .container .projetos .Item1 p, .Item2 p {
+    font-family: "Lexend", sans-serif;
+    width: 350px;
+    color: rgb(172, 172, 172);
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.portifolio-effect {
+    opacity: 0;
+    transform: translateX(300px) translateY(100px);
+    transition: opacity 2s ease-in-out, transform 2s ease;
+}
+
+.portifolio-effect.visible {
+    opacity: 1;
+    transform: translateX(0) ;
+}
+
+.portifolio-effect2 {
+    opacity:0;
+    transform: translateX(-300px) translateY(100px);
+    transition:  opacity 2s ease-in-out, transform 2s ease;
+}
+
+.portifolio-effect2.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1020px) {
+    .Inicio {
+        width: 100%;
+        height: 600px;
+    }
+
+    .Inicio > .bg-video {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        left: -100px;
+    }
+
+    .Inicio .bg-video > video {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Inicio .container {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Inicio .container h1{
+        margin: 0 30px;
+        width: 600px;
+        font-size: 45px;
+    }
+
+    .Habilidades .container {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Habilidades .container .Linguagens {
+        margin-top: 50px;
+        padding: 40px;
+    }
+    
+    .Habilidades .container .Linguagens p{
+        font-size: 10px;
+    }
+
+    .Habilidades .container .Linguagens ul li {
+        font-size: 9px;
+    }
+
+    .Habilidades .container .Linguagens img {
+        height: 40px;
+    }
+
+    .meuprojetos .container .projetos img{
+        height: 260px;
+        margin: 100px 0 0 0;
+    }
+
+    
+
+    .meuprojetos .container .projetos {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+}
